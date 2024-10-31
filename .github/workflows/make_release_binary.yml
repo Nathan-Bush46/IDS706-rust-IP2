@@ -22,7 +22,7 @@ jobs:
       run: mv target/release/rust_sqlite_demo ./ 
 
     - name: Upload binary artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: rust-binary
         path: ./rust_sqlite_demo  
