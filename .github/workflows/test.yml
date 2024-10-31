@@ -1,0 +1,24 @@
+name: Docker Image CI test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build the Docker image
+      run: docker build . --file .devcontainer/Dockerfile --tag my-image-name:$(date +%s)
+
+    - name: Run test
+      run: make test
+
+    - run: echo "🍏 This job's status is ${{ job.status }}."
+
+
+

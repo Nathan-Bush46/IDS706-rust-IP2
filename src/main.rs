@@ -1,5 +1,6 @@
 use rusqlite::{params, Connection, Result};
 
+#[allow(dead_code)] // This is just hear as Id is not really used yet but still should exist for a table
 #[derive(Debug)]
 struct Person {
     id: i32,

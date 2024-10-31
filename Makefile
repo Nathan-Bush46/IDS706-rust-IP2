@@ -2,8 +2,6 @@ release:
 	cargo run --release
 build:
 	cargo build
-test:
-	cargo test
 
 lint:
 	cargo clippy
@@ -11,4 +9,7 @@ lint:
 run:
 	cargo run
 
+test: run
+	cargo test
+	
 all: build test lint run

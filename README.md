@@ -1,14 +1,5 @@
 # Rust-Python
 
-[![Docker Image CI Main](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/main.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/main.yml)
-
-[![Docker Image CI Lint](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/lint.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/lint.yml)
-
-[![Docker Image CI Test](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/test.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/test.yml)
-
-[![Docker Image CI Format](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/format.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/format.yml)
-
-[![Docker Image CI Install](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/install.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-rust/actions/workflows/install.yml)
 
 
 # Rust SQLite Demo
@@ -20,12 +11,12 @@ This project demonstrates basic CRUD operations using Rust and SQLite.
 - Rust
 - SQLite
 
-## Running the Program
+## Running and Set
 
-1. See Docker set up to install needed libraries 
-2. Clone this repository.
+1. See Docker set up to install needed libraries. (This installs needed Dependencies for you)
 3. Run `cargo build` to build the project.
 4. Run `cargo run` to execute the program. (or just cargo all to build, lint, and run)
+5. make release will make optimized binary and run it once
  
 ## Set up instructions using VS code + Docker: 
 ### Docker
