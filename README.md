@@ -22,7 +22,7 @@ This project demonstrates basic CRUD operations using Rust and SQLite.
 1. See Docker set up to install needed libraries. (This installs needed Dependencies for you)
 3. Run `cargo build` to build the project. (or make)
 4. Run `cargo run` to execute the program. (or use make all to build, lint, and run)
-5. make release will make optimized binary and run it once
+5. `make release` will make optimized binary and run it once
  
 ## Set up instructions using VS code + Docker: 
 ### Docker
