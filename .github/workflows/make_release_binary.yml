@@ -18,6 +18,12 @@ jobs:
     - name: Run build
       run: make release
 
+    - name: Upload binary artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: rust-binary-github
+        path: target/release/sql-demo
+
     - run: echo "🍏 This job's status is ${{ job.status }}."
 
 
