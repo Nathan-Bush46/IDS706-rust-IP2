@@ -15,16 +15,20 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file .devcontainer/Dockerfile --tag my-image-name:$(date +%s)
 
-    - name: Run build
+    - name: Run Build optimized binary
       run: make release
+
+    - name: Move binary to root directory
+      run: mv target/release/rust_sqlite_demo ./ 
 
     - name: Upload binary artifact
       uses: actions/upload-artifact@v3
       with:
-        name: rust-binary-github
-        path: ./optimized_binary
+        name: rust-binary
+        path: ./rust_sqlite_demo  
 
     - run: echo "🍏 This job's status is ${{ job.status }}."
+
 
 
 
