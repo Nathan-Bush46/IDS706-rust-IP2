@@ -1,0 +1,21 @@
+{
+    "name": "docker rust",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "postCreateCommand": "sh .devcontainer/postinstall.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [ 
+                "rust-lang.rust-analyzer",
+                "tamasfe.even-better-toml",
+                "jwmb.dependie", 
+                "vadimcn.vscode-lldb",
+                "usernamehw.errorlens",
+                "eamodio.gitlens",
+                "ms-vscode.vscode-typescript-tslint-plugin",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    }
+}
