@@ -10,6 +10,8 @@
 
 # Rust SQLite Demo
 
+[Video Demo](https://www.youtube.com/watch?v=KQPPUOnUfpY)
+
 This project demonstrates basic CRUD operations using Rust and SQLite. It showcases how to create a simple database, insert data, read from it, update records, and delete them.
 
 ## Dependencies
